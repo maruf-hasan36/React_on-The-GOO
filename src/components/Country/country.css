@@ -1,0 +1,51 @@
+.Country {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1e293b, #334155);
+  border: 2px solid #38bdf8;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+}
+.country-not-visited {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: purple;
+  border: 2px solid #38bdf8;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+}
+
+.Country:hover {
+  transform: scale(1.03);
+}
+
+.btn {
+  background: rgba(59, 130, 246, 0.6); /* semi-transparent blue */
+  color: #ffffff;
+  padding: 12px 24px;
+  border: 1px solid rgba(255, 255, 255, 0); /* no visible border by default */
+  border-radius: 15px;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+  background: rgba(59, 130, 246, 0.8);
+}
+
+/* Border appears only when button is pressed */
+.btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border: 2px solid #ffffff; /* border visible on click */
+}

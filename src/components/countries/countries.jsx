@@ -1,9 +1,20 @@
-import React from "react";
+import React, { use } from "react";
+import Country from "../Country/Country";
+import "./country.css";
 
-const Countries = () => {
+const Countries = ({ countriesPromice }) => {
+  const countriesData = use(countriesPromice);
+  const country = countriesData.countries;
+  console.log(country);
+
   return (
     <div>
-      <h1>Countries on the go.....</h1>
+      <h1>Total Country:{country.length}</h1>
+      <div className="Countries">
+        {country.map((country) => (
+          <Country key={country.ccn3.ccn3} country={country}></Country>
+        ))}
+      </div>
     </div>
   );
 };
