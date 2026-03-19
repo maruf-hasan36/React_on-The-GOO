@@ -3,3 +3,32 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+
+.stats-container {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 18px;
+  background: rgba(30, 41, 59, 0.7); /* dark glass */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  transition: 0.3s ease;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.stats-container:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(59, 130, 246, 0.4);
+}
+.stats-container,
+h2 {
+  align-items: center;
+}
+.visited-flag img {
+  width: 100px;
+  height: 50px;
+  margin-left: 5px;
+}
